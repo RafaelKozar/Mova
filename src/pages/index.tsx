@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import CompletedChallenges from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 import { ExperienceBar } from "../components/ExperienceBar";
@@ -16,8 +16,8 @@ export default function Home() {
       </Head>
 
       <ExperienceBar />
-      <section >
-        <div>
+      <section style={{marginTop : 30 }} >
+        <div  >
           <Profile />
           <CompletedChallenges />
           <Countdown />
